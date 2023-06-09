@@ -1,4 +1,7 @@
 #include <bits/stdc++.h> 
+#include <iostream> 
+using namespace std;
+
 void selectionSort(vector<int>& arr, int n)
 {   
     for(int i = 0; i < n - 1; i++){
@@ -11,4 +14,10 @@ void selectionSort(vector<int>& arr, int n)
         }
         swap(arr[minIndex], arr[i]);
     }
+}
+
+int main() {
+    selectionSort({1}, 2);
+
+    return 0;
 }
